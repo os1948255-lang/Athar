@@ -1,0 +1,143 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>أثر — منصة الدعوات الإلكترونية</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bur:#6b1230;--bur2:#3f0a1c;--gold:#c9a24b;--bg:#faf5ec;--tx:#2a1a1f;--sf:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1d0b12;--tx:#f3e9dc;--sf:#2a1119}}
+:root[data-theme=dark]{--bg:#1d0b12;--tx:#f3e9dc;--sf:#2a1119}
+html{scroll-behavior:smooth;scroll-padding-top:64px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.8 Cairo,Tajawal,sans-serif}
+h1,h2,h3,h4{font-family:Amiri,serif;margin:0 0 .3em;line-height:1.3}
+nav{position:sticky;top:0;z-index:20;background:var(--bur2);display:flex;justify-content:space-between;align-items:center;padding:8px 16px;gap:10px;flex-wrap:wrap}
+nav b{font:700 1.7rem Amiri,serif;color:var(--gold)}nav a{color:#f6e9cf;text-decoration:none;margin-inline-start:14px;font-size:.92rem}
+.hero{background:radial-gradient(circle at 50% 0,#8a1d44,var(--bur2) 72%);color:#faf0dc;text-align:center;padding:60px 16px 70px}
+.hero h1{font-size:clamp(2.6rem,9vw,4.6rem);color:var(--gold)}.hero p{max-width:540px;margin:0 auto 18px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--gold);color:#3a0a19;border:0;border-radius:40px;padding:10px 26px;font:700 1rem Cairo,sans-serif;cursor:pointer;text-decoration:none}
+.btn.o{background:none;border:1px solid var(--gold);color:var(--gold)}.btn.s{padding:5px 15px;font-size:.85rem}
+.sec{padding:64px 18px;max-width:1100px;margin:auto}.sec>h2{text-align:center;font-size:clamp(2rem,6vw,2.8rem);color:var(--bur)}
+@media(prefers-color-scheme:dark){.sec>h2{color:var(--gold)}}
+.sub{text-align:center;opacity:.8;margin:-4px auto 28px;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.tc{background:var(--sf);border:1px solid #c9a24b55;border-radius:14px;padding:12px 8px 18px;text-align:center}
+.studio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px;align-items:start}
+@media(max-width:800px){.studio{grid-template-columns:1fr}}
+.panel{background:var(--sf);border:1px solid #c9a24b55;border-radius:14px;padding:18px}
+label.f{display:block;font-size:.85rem;margin:8px 0 2px}
+input,select,textarea{width:100%;padding:9px;border:1px solid #c9a24b99;border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+input[type=color]{height:40px;padding:2px}input[type=file]{padding:6px}.row{display:flex;gap:10px}.row>*{flex:1;min-width:0}
+.price{text-align:center;background:linear-gradient(160deg,var(--bur),var(--bur2));color:#faf0dc;border-radius:18px;padding:32px 18px;max-width:460px;margin:auto}
+.price big{display:block;font:700 3.6rem Amiri,serif;color:var(--gold)}.price ul{list-style:none;padding:0;text-align:start;max-width:300px;margin:14px auto}.price li:before{content:'✨ '}
+details{background:var(--sf);border:1px solid #c9a24b55;border-radius:10px;padding:12px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}
+.rv{background:var(--sf);border-inline-start:3px solid var(--gold);padding:12px 16px;border-radius:8px}
+footer{background:var(--bur2);color:#f6e9cf;text-align:center;padding:28px 16px}footer a{color:var(--gold);margin:0 10px}
+.hide{display:none!important}
+.env{position:relative;width:min(88%,320px);aspect-ratio:3/2;margin:20px auto 34px;cursor:pointer;perspective:800px}
+.env i{position:absolute;inset:0;border-radius:6px;background:var(--p)}.env .eb{filter:brightness(.7)}
+.env .efl{clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:transform .8s;filter:brightness(1.2);z-index:2}
+.env .ef{clip-path:polygon(0 100%,0 0,50% 58%,100% 0,100% 100%)}.env.open .efl{transform:rotateX(180deg);z-index:0}
+.env .str{background:none;border-top:2px solid var(--g);top:57%;height:0;bottom:auto;z-index:2;transition:opacity .4s}
+.env .seal{position:absolute;left:50%;top:58%;width:46px;height:46px;margin:-23px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--g),#7a5a1c);color:var(--p);font:700 1.6rem Amiri,serif;display:grid;place-items:center;z-index:3;transition:opacity .4s;box-shadow:0 2px 6px #0006}
+.env.open .seal,.env.open .str{opacity:0}.tap{position:absolute;bottom:-26px;width:100%;text-align:center;font-size:.8rem;opacity:.75}
+.card{position:relative;background:var(--bg);color:var(--tc);font-family:var(--f);border:3px double var(--g);border-radius:8px;max-width:480px;margin:16px auto 6px;padding:26px 16px;text-align:center;animation:rise .9s}
+.card.cust{border:0;padding:0;aspect-ratio:3/4;overflow:hidden}.cust .slot{position:absolute;overflow:auto;padding:4px;scrollbar-width:none}.cust .frm{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+@keyframes rise{from{opacity:0;transform:translateY(40px) scale(.96)}}
+.card h3{font-size:clamp(2rem,8vw,3rem);color:var(--p);margin:0;font-family:inherit}.card .amp{font-size:1.6rem;color:var(--g);margin:0}
+.card .sm{font-size:.88rem;opacity:.85;margin:4px 0}.card .dt{font-weight:700;margin:10px 0 6px}
+.cd{display:flex;justify-content:center;gap:6px;margin:8px 0 12px;direction:ltr}.cd span{background:var(--p);color:#fff;border-radius:8px;padding:4px 6px;min-width:50px;font-size:.68rem}.cd b{display:block;font-size:1.2rem}
+.map{display:block;margin:10px auto;max-width:300px;border:1px solid var(--g);border-radius:10px;overflow:hidden}.map svg{display:block;width:100%}
+.ctl{text-align:center;margin-bottom:18px}.ctl a{color:var(--g);margin:0 8px;font-size:.9rem}.ctl .lnk{background:none;border:0;color:inherit;opacity:.7;cursor:pointer;font:inherit;font-size:.8rem}
+.guest{position:fixed;inset:0;overflow:auto;background:radial-gradient(circle at 50% 0,#8a1d44,var(--bur2));display:flex;flex-direction:column;justify-content:center;color:#faf0dc;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.guest .card{width:min(100%,560px);min-height:min(100dvh,760px);display:flex;flex-direction:column;justify-content:center;margin:0 auto;border-radius:0}
+.guest .card.cust{display:block;min-height:0;width:min(100%,calc(100dvh*.75),560px)}
+@media(min-width:700px){.guest .card{border-radius:10px;min-height:0;margin:20px auto 6px}}
+.guest .env{width:min(86%,420px)}
+.adm{max-width:920px;margin:auto;padding:24px 14px}.ord{background:var(--sf);border:1px solid #c9a24b66;border-radius:12px;padding:14px;margin:10px 0}
+.tag{font-size:.75rem;border-radius:20px;padding:2px 10px;background:#e6a70033;color:#b07800}.tag.on{background:#1f8a4a33;color:#1f8a4a}
+.tpa{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #c9a24b44;padding:6px 0}
+</style></head><body>
+<div id="site">
+<nav><b>أثر ✨</b><div><a href="#home">الرئيسية</a><a href="#templates">القوالب</a><a href="#studio">الاستوديو</a><a href="#pricing">الباقة</a><a href="#reviews">الآراء</a><a href="#contact">تواصل</a></div></nav>
+<header class="hero" id="home"><h1>أثر ✨</h1><p>دعوات زفاف إلكترونية فاخرة تُفتح كظرف مختوم 💌 اجعل ليلتك أثرًا لا يُنسى 🤍</p><div id="hero"></div><a class="btn" href="#templates">🎨 تصفّح القوالب</a></header>
+<section class="sec" id="templates"><h2>القوالب 💐</h2><p class="sub">افتح الظرف لتشاهد القالب، ثم اختره وخصّصه.</p><div class="grid" id="tpls"></div></section>
+<section class="sec" id="studio"><h2>استوديو التصميم 🎨</h2><p class="sub">عدّل بياناتك وألوانك وشاهد المعاينة فورًا.</p>
+<div class="studio"><div class="panel" id="frm">
+<label class="f">القالب</label><select id="tpl"></select>
+<div class="row"><div><label class="f">اسم العريس 🤵</label><input id="groom" value="أحمد"></div><div><label class="f">اسم العروس 👰</label><input id="bride" value="سارة"></div></div>
+<label class="f">نص الدعوة ✍️</label><textarea id="msg" rows="2">يتشرف أهالي العروسين بدعوتكم لحضور حفل زفافهما</textarea>
+<label class="f">موعد الزفاف 📅</label><input id="date" type="datetime-local" value="2027-01-15T19:00">
+<label class="f">المكان 📍</label><input id="venue" value="قاعة القصر الكبرى"><label class="f">العنوان / المدينة</label><input id="addr" value="القاهرة، مصر">
+<label class="f">نوع الخط</label><select id="font"><option value="Amiri">أميري</option><option value="Cairo">القاهرة</option><option value="Tajawal">تجوال</option><option value="Reem Kufi">ريم كوفي</option></select>
+<div class="row"><div><label class="f">لون الأسماء</label><input id="c1" type="color" value="#6b1230"></div><div><label class="f">لون الزخرفة</label><input id="c2" type="color" value="#c9a24b"></div></div>
+<div class="row"><div><label class="f">لون النص</label><input id="tc" type="color" value="#2a1a1f"></div><div><label class="f">لون الخلفية</label><input id="bg" type="color" value="#fffaf1"></div></div>
+<label class="f">رقم واتساب الخاص بك 📱</label><input id="phone" inputmode="tel" placeholder="01XXXXXXXXX">
+<p style="font-size:.85rem;opacity:.8">معاينة فقط — يصلك رابط الدعوة بعد تأكيد الدفع 🔒</p>
+<button class="btn" data-a="order" style="width:100%">تأكيد الطلب · 300 جنيه 💌</button><p id="ok" class="hide" style="color:#1f8a4a"></p></div>
+<div id="pv"></div></div></section>
+<section class="sec" id="pricing"><h2>الباقة 💎</h2><div class="price"><div>باقة واحدة متكاملة</div><big>300 جنيه</big><ul><li>ظرف تفاعلي بحركة فتح</li><li>عدّاد تنازلي لليوم الكبير</li><li>موقع القاعة وخريطة</li><li>موسيقى اختيارية (MP3)</li><li>أسماء وألوان وخطوط مخصّصة</li><li>رابط خاص لضيوفك</li><li>يعمل على كل الأجهزة 📱💻</li></ul><button class="btn" onclick="location.hash='#studio'">ابدأ الآن</button></div></section>
+<section class="sec" id="reviews"><h2>آراء عملائنا ⭐</h2><div class="grid" id="rvl"></div>
+<div class="panel" style="max-width:520px;margin:28px auto 0"><h4>شاركنا تجربتك 💬</h4><input id="rn" placeholder="الاسم"><label class="f">التقييم</label><select id="rs"><option>5</option><option>4</option><option>3</option></select><label class="f">رأيك</label><textarea id="rt" rows="3"></textarea><p><button class="btn s" data-a="rev">إرسال</button></p></div></section>
+<section class="sec" id="contact" style="text-align:center"><h2>تواصل معنا 📞</h2><p class="sub">للتصاميم الخاصة أو أي استفسار</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/201097597133">💬 واتساب 01097597133</a> <a class="btn o" target="_blank" rel="noopener" href="https://www.instagram.com/atharluxury4?stkn=OHA0NTNlY3o0cGJw">📸 إنستجرام</a></section>
+<footer><p>أثر · منصة الدعوات الإلكترونية 💍</p><a target="_blank" rel="noopener" href="https://wa.me/201097597133">💬 واتساب</a><a target="_blank" rel="noopener" href="https://www.instagram.com/atharluxury4?stkn=OHA0NTNlY3o0cGJw">📸 إنستجرام</a></footer>
+</div>
+<div id="adm" class="hide"></div><div id="gst" class="guest hide"></div>
+<script>/*ATHAR*/
+const $=s=>document.querySelector(s),esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const BT=[{id:'b1',n:'عنابي ملكي',c1:'#6b1230',c2:'#c9a24b',bg:'#fffaf1',tc:'#2a1a1f'},{id:'b2',n:'زمردي ذهبي',c1:'#14513c',c2:'#d4af61',bg:'#fbf8ee',tc:'#1d2a24'},{id:'b3',n:'ليلي وردي',c1:'#2b1a3d',c2:'#c9788f',bg:'#fdf3f5',tc:'#2a1a2f'},{id:'b4',n:'عاجي كلاسيكي',c1:'#8a6a3a',c2:'#6b1230',bg:'#fffdf7',tc:'#3a2a1a'}];
+const WA='201097597133',AU={};let pvOpen=false;
+const enc=o=>btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const dec=c=>{try{c=c.replace(/-/g,'+').replace(/_/g,'/');return JSON.parse(decodeURIComponent(escape(atob(c+'==='.slice((c.length+3)%4)))))}catch(e){return null}};
+const ls=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){alert('المساحة ممتلئة، استخدم صورًا أصغر');return false}};
+const ALLT=()=>{const m={};[...BT,...(window.__TPLS||[]),...ls('athar_tpls',[])].forEach(t=>m[t.id]=t);return Object.values(m)};
+const tplById=id=>ALLT().find(t=>t.id==id)||BT[0];
+const phone=n=>{n=String(n).replace(/\D/g,'');return n[0]=='0'?'20'+n.slice(1):n};
+const img=(f,w)=>new Promise(r=>{const i=new Image();i.onload=()=>{const k=Math.min(1,w/i.width),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;c.getContext('2d').drawImage(i,0,0,c.width,c.height);r(c.toDataURL('image/webp',.8))};i.src=URL.createObjectURL(f)});
+const MAP='<svg viewBox="0 0 340 130"><rect width="340" height="130" fill="#f1e6cf"/><path d="M0 32h340M0 65h340M0 98h340M60 0v130M130 0v130M200 0v130M270 0v130" stroke="#e0cfa8"/><path d="M0 110C80 90 120 40 200 60S300 20 340 30" stroke="#fff" stroke-width="8" fill="none"/><path d="M170 28c-11 0-19 8-19 19 0 14 19 33 19 33s19-19 19-33c0-11-8-19-19-19z" fill="var(--p)"/><circle cx="170" cy="47" r="7" fill="#fffaf1"/></svg>';
+function mk(d,open){const t=tplById(d.tpl),s=t.s||[6,4,88,92],cu=t.bgimg||t.frame,ds=isNaN(new Date(d.date))?'':new Date(d.date).toLocaleString('ar-EG',{dateStyle:'full',timeStyle:'short'});
+const body=`<p class="sm">${esc(d.msg)}</p><h3>${esc(d.groom)}</h3><p class="amp">&amp;</p><h3>${esc(d.bride)}</h3><p class="dt">${esc(ds)}</p><div class="cd" data-t="${esc(d.date)}"></div><p style="margin:4px 0;font-weight:700">📍 ${esc(d.venue)}</p><p class="sm">${esc(d.addr)}</p><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.venue+' '+d.addr)}">${MAP}</a>`;
+return `<div class="inv" style="--p:${esc(d.c1)};--g:${esc(d.c2)};--bg:${esc(d.bg)};--tc:${esc(d.tc)};--f:'${esc(d.font||'Amiri')}',serif"><div class="env${open?' hide':''}" data-a="open"><i class="eb"></i><i class="efl"></i><i class="ef"></i><i class="str"></i><b class="seal">أ</b><span class="tap">اضغط لفتح الدعوة 💌</span></div>
+<div class="card${cu?' cust':''}${open?'':' hide'}" style="${t.bgimg?`background:url('${t.bgimg}') center/cover`:''}">${cu?`<div class="slot" style="left:${s[0]}%;top:${s[1]}%;width:${s[2]}%;height:${s[3]}%">${body}</div>`:body}${t.frame?`<img class="frm" alt="" src="${t.frame}">`:''}</div>
+<div class="ctl${open?'':' hide'}"><label class="btn s" style="cursor:pointer;background:var(--p);color:#fff">🎵 إضافة موسيقى MP3<input class="mp3" type="file" accept="audio/*" hidden></label> <button class="btn s hide" data-a="pp">▶ تشغيل</button><p><a target="_blank" rel="noopener" href="https://wa.me/${WA}">💬 واتساب</a><a target="_blank" rel="noopener" href="https://www.instagram.com/atharluxury4?stkn=OHA0NTNlY3o0cGJw">📸 إنستجرام</a></p><button class="lnk" data-a="reseal">↺ إغلاق الظرف</button></div></div>`}
+function put(el,d,open,k){el.dataset.k=k;el.innerHTML=mk(d,open);const b=el.querySelector('[data-a=pp]');if(AU[k]){b.classList.remove('hide');b.textContent=AU[k].paused?'▶ تشغيل':'❚❚ إيقاف'}tick()}
+function tick(){document.querySelectorAll('.cd').forEach(e=>{let s=Math.max(0,(new Date(e.dataset.t)-Date.now())/1000|0);const v=[s/86400|0,s/3600%24|0,s/60%60|0,s%60];e.innerHTML=['يوم','ساعة','دقيقة','ثانية'].map((l,i)=>`<span><b>${v[i]}</b>${l}</span>`).join('')})}setInterval(tick,1000);
+const val=()=>({groom:$('#groom').value,bride:$('#bride').value,msg:$('#msg').value,date:$('#date').value,venue:$('#venue').value,addr:$('#addr').value,font:$('#font').value,c1:$('#c1').value,c2:$('#c2').value,tc:$('#tc').value,bg:$('#bg').value,tpl:$('#tpl').value,phone:$('#phone').value});
+const sample=t=>({groom:'أحمد',bride:'سارة',msg:'يتشرف أهالي العروسين بدعوتكم',date:'2027-01-15T19:00',venue:'قاعة الاحتفالات',addr:'القاهرة',font:'Amiri',c1:t.c1,c2:t.c2,tc:t.tc,bg:t.bg,tpl:t.id});
+const pv=()=>put($('#pv'),val(),pvOpen,'pv');
+function renderT(){const cur=$('#tpl').value;$('#tpl').innerHTML=ALLT().map(t=>`<option value="${esc(t.id)}">${esc(t.n)}</option>`).join('');if(cur&&ALLT().some(t=>t.id==cur))$('#tpl').value=cur;
+$('#tpls').innerHTML='';ALLT().forEach(t=>{const d=document.createElement('div');d.className='tc';d.innerHTML=`<div id="t_${esc(t.id)}"></div><h4>${esc(t.n)}</h4><button class="btn s" data-a="use" data-id="${esc(t.id)}">اختيار القالب</button>`;$('#tpls').append(d);put(d.firstChild,sample(t),false,'t_'+t.id)});pv()}
+function applyT(){const t=tplById($('#tpl').value);['c1','c2','tc','bg'].forEach(k=>$('#'+k).value=t[k]);pv()}
+$('#tpl').onchange=applyT;$('#frm').oninput=pv;renderT();put($('#hero'),sample(BT[0]),false,'hero');
+document.addEventListener('change',e=>{if(!e.target.matches('.mp3')||!e.target.files[0])return;const w=e.target.closest('[data-k]'),k=w.dataset.k;if(AU[k])AU[k].pause();AU[k]=new Audio(URL.createObjectURL(e.target.files[0]));AU[k].loop=true;const b=w.querySelector('[data-a=pp]');b.classList.remove('hide');b.textContent='▶ تشغيل'});
+const R=[['منى وكريم',5,'تصميم راقٍ وفتح الظرف أبهر الضيوف 😍'],['نور وعمر',5,'سريع وأنيق وسعره مناسب جدًا 👏'],['هناء ويوسف',5,'العدّاد التنازلي أعجب عائلتنا كثيرًا 🤍']];
+const rl=()=>$('#rvl').innerHTML=[...R,...ls('athar_rev',[])].map(r=>`<div class="rv"><div>${'⭐'.repeat(r[1])}</div><p>${esc(r[2])}</p><b>${esc(r[0])}</b></div>`).join('');rl();
+const base=()=>location.origin+location.pathname;
+function adm(){const A=$('#adm');if(sessionStorage.adm!=='1'){A.innerHTML=`<div class="adm"><div class="panel" style="max-width:360px;margin:60px auto"><h3>🔐 دخول المشرف</h3><input id="au" placeholder="اسم المستخدم" autocomplete="username"><label class="f"></label><input id="ap" type="password" placeholder="كلمة المرور" autocomplete="current-password"><p id="ae" style="color:#c00"></p><button class="btn" data-a="login">دخول</button></div></div>`;return}
+const O=ls('athar_orders',[]),TP=ls('athar_tpls',[]);A.innerHTML=`<div class="adm"><div class="row" style="align-items:center"><h2>لوحة التحكم 🛠️</h2><div style="text-align:end"><button class="btn s" data-a="exp">⬇️ تصدير المشروع</button> <button class="btn s o" data-a="logout">خروج</button></div></div>
+<div class="panel"><h3>🎨 إدارة القوالب</h3><div class="row"><div><label class="f">اسم القالب</label><input id="tn"></div><div><label class="f">لون الأسماء</label><input id="t1" type="color" value="#6b1230"></div><div><label class="f">الزخرفة</label><input id="t2" type="color" value="#c9a24b"></div></div>
+<div class="row"><div><label class="f">لون الخلفية</label><input id="tb" type="color" value="#fffaf1"></div><div><label class="f">لون النص</label><input id="tt" type="color" value="#2a1a1f"></div></div>
+<div class="row"><div><label class="f">البرواز الخارجي (PNG شفاف)</label><input id="tf" type="file" accept="image/*"></div><div><label class="f">صورة الخلفية</label><input id="ti" type="file" accept="image/*"></div></div>
+<label class="f">مكان كتابة الدعوة (% من البطاقة): يمين · أعلى · عرض · ارتفاع</label><div class="row"><input id="sx" type="number" value="8"><input id="sy" type="number" value="6"><input id="sw" type="number" value="84"><input id="sh" type="number" value="88"></div>
+<p><button class="btn s" data-a="addt">➕ إضافة القالب</button></p>${TP.map(t=>`<div class="tpa"><span>${esc(t.n)}</span><button class="btn s o" data-a="delt" data-id="${esc(t.id)}">حذف</button></div>`).join('')}</div>
+<div class="panel" style="margin-top:12px"><b>📥 استيراد طلب من واتساب</b><textarea id="imp" rows="2" placeholder="الصق كود الطلب"></textarea><p><button class="btn s" data-a="imp">إضافة</button></p></div>
+<h3 style="margin-top:16px">📦 الطلبات (${O.length})</h3>${O.map((o,i)=>{const d=dec(o.code)||{},lk=base()+'#/i/'+o.code,ac=o.status=='active';return `<div class="ord"><b>${esc(d.groom)} &amp; ${esc(d.bride)}</b> <span class="tag ${ac?'on':''}">${ac?'✅ مدفوع ومفعّل':'⏳ بانتظار الدفع'}</span><br><small>${esc(d.date)} · ${esc(d.venue)} · ${esc(tplById(d.tpl).n)} · ${esc(d.phone)}</small><p>${ac?`<input readonly value="${esc(lk)}" onclick="this.select()"><br><button class="btn s" data-a="copy" data-i="${i}">نسخ الرابط</button> <a class="btn s o" target="_blank" rel="noopener" href="${esc(lk)}">فتح</a> <a class="btn s o" target="_blank" rel="noopener" href="https://wa.me/${phone(d.phone||'')}?text=${encodeURIComponent('دعوتك من أثر جاهزة 💌 '+lk)}">إرسال للعميل</a>`:`<button class="btn s" data-a="appr" data-i="${i}">✅ تأكيد الدفع وتفعيل الرابط</button>`} <button class="btn s o" data-a="del" data-i="${i}">حذف</button></p></div>`}).join('')||'<p>لا توجد طلبات بعد.</p>'}</div>`}
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,i=+b.dataset.i,inv=b.closest('.inv'),w=b.closest('[data-k]');
+if(a=='open'){b.classList.add('open');setTimeout(()=>{b.classList.add('hide');inv.querySelector('.card').classList.remove('hide');inv.querySelector('.ctl').classList.remove('hide');if(w&&w.id=='pv')pvOpen=true;tick()},900)}
+else if(a=='reseal'){inv.querySelector('.env').classList.remove('open','hide');inv.querySelector('.card').classList.add('hide');inv.querySelector('.ctl').classList.add('hide');if(w&&w.id=='pv')pvOpen=false}
+else if(a=='pp'){const x=AU[w.dataset.k];if(x.paused){x.play();b.textContent='❚❚ إيقاف'}else{x.pause();b.textContent='▶ تشغيل'}}
+else if(a=='use'){$('#tpl').value=b.dataset.id;applyT();location.hash='#studio'}
+else if(a=='rev'){if(!$('#rt').value.trim())return;const L=ls('athar_rev',[]);L.push([$('#rn').value||'ضيف',+$('#rs').value,$('#rt').value]);sv('athar_rev',L);$('#rt').value='';rl()}
+else if(a=='order'){const d=val();if(!d.groom||!d.bride||!d.phone){alert('أدخل الاسمين ورقم واتساب');return}
+const id='A'+Date.now().toString(36).toUpperCase(),code=enc({...d,id}),O=ls('athar_orders',[]);O.push({code,status:'pending'});sv('athar_orders',O);
+const m=`طلب جديد من أثر (300 جنيه) 💌\nرقم الطلب: ${id}\nالعريس: ${d.groom}\nالعروس: ${d.bride}\nالموعد: ${d.date}\nالمكان: ${d.venue}، ${d.addr}\nالقالب: ${tplById(d.tpl).n}\nواتساب العميل: ${d.phone}\n\nكود الطلب:\n${code}`;
+$('#ok').textContent='تم إرسال طلبك! أكمل في واتساب لترتيب الدفع، وسيصلك الرابط بعد التأكيد 🤍';$('#ok').classList.remove('hide');window.open(`https://wa.me/${WA}?text=${encodeURIComponent(m)}`,'_blank')}
+else if(a=='login'){if($('#au').value=='Omar2009'&&$('#ap').value=='Omar1582009'){sessionStorage.adm='1';adm()}else $('#ae').textContent='بيانات غير صحيحة'}
+else if(a=='logout'){sessionStorage.removeItem('adm');adm()}
+else if(a=='imp'){const c=$('#imp').value.trim().split(/\s+/).pop();if(!dec(c)){alert('كود غير صالح');return}const O=ls('athar_orders',[]);if(!O.some(o=>o.code==c))O.push({code:c,status:'pending'});sv('athar_orders',O);adm()}
+else if(a=='addt'){if(!$('#tn').value.trim()){alert('اكتب اسم القالب');return}const t={id:'c'+Date.now().toString(36),n:$('#tn').value,c1:$('#t1').value,c2:$('#t2').value,bg:$('#tb').value,tc:$('#tt').value,s:['sx','sy','sw','sh'].map(k=>+$('#'+k).value)};
+if($('#tf').files[0])t.frame=await img($('#tf').files[0],700);if($('#ti').files[0])t.bgimg=await img($('#ti').files[0],700);const L=ls('athar_tpls',[]);L.push(t);if(sv('athar_tpls',L)){renderT();adm()}}
+else if(a=='delt'){sv('athar_tpls',ls('athar_tpls',[]).filter(t=>t.id!=b.dataset.id));renderT();adm()}
+else if(a=='exp'){const dl=await window.claude?.use('downloads');if(!dl){alert('التصدير غير متاح هنا');return}let h;try{h=await(await fetch(location.href.split('#')[0])).text()}catch(x){h='<!doctype html>'+document.documentElement.outerHTML}
+h=h.replace('/*ATHAR*/','window.__TPLS='+JSON.stringify(ls('athar_tpls',[])).replace(/</g,'\\u003c')+';');try{await dl.save({filename:'athar-site.html',data:new Blob([h],{type:'text/html'})})}catch(x){}}
+else if(a=='appr'||a=='del'||a=='copy'){const O=ls('athar_orders',[]);if(a=='appr'){O[i].status='active';O[i].at=Date.now()}else if(a=='del'){if(!confirm('حذف الطلب؟'))return;O.splice(i,1)}else{navigator.clipboard.writeText(base()+'#/i/'+O[i].code);b.textContent='تم النسخ ✓';return}sv('athar_orders',O);adm()}});
+function route(){const h=location.hash,m=h.match(/^#\/i\/(.+)$/),ad=h.startsWith('#/admin');$('#site').classList.toggle('hide',!!m||ad);$('#adm').classList.toggle('hide',!ad);$('#gst').classList.toggle('hide',!m);
+if(ad)adm();if(m){const d=dec(m[1]);$('#gst').innerHTML=d?'':'<p style="text-align:center;padding:30px">رابط الدعوة غير صالح</p>';if(d)put($('#gst'),d,false,'g')}}
+addEventListener('hashchange',route);route();
+</script></body></html>
